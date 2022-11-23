@@ -1,0 +1,16 @@
+{
+    "name": "ilaam-logging-aspect",
+    "version": "1.0.0",
+    "description": "Validate logging aspect",
+    "devDependencies": {},
+    "author": "",
+    "license": "ISC",
+    "keywords": [],
+    "dependencies": {
+        "@cucumber/cucumber": "^8.7.0",
+        "@ln-maf/api": "^2.0.1",
+        "@ln-maf/core": "^2.0.1",
+        "@ln-maf/mysql": "^2.0.1",
+        "@ln-maf/validations": "^2.0.2"
+    }
+}
