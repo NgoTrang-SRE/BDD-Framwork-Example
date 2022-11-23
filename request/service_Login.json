@@ -1,0 +1,7 @@
+{
+    "api": "/test?userName=${username}&password=${password}",
+    "method": "GET",
+    "headers": {
+        "accept": "application/json"
+    }
+}

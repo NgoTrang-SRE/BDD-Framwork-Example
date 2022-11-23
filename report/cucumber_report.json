@@ -1,0 +1,153 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "bdd-framework-demo;verify-successful-reponse-when-send-login-request",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify successful reponse when send login request",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 514899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "set config from json file \"config.json\"",
+            "match": {
+              "location": "node_modules\\@ln-maf\\validations\\index.js:344"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21665199
+            },
+            "embeddings": [
+              {
+                "data": "{\n  \"urlMain\": \"https://petstore.swagger.io\"\n}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "trang",
+                      "123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 7,
+            "name": "set:",
+            "match": {
+              "location": "node_modules\\@ln-maf\\validations\\index.js:351"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1424699
+            },
+            "embeddings": [
+              {
+                "data": "{\n  \"username\": \"trang\"\n}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\n  \"password\": \"123\"\n}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "url \"https://eodu2u39v3kut67.m.pipedream.net\"",
+            "match": {
+              "location": "node_modules\\@ln-maf\\api\\index.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 916400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "api request from file \"request/service_Login.json\" is performed",
+            "match": {
+              "location": "node_modules\\@ln-maf\\core\\index.js:125"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13829915000
+            },
+            "embeddings": [
+              {
+                "data": "{\n  \"response\": {\n    \"success\": true\n  }\n}",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "{\n  \"lastRun\": {\n    \"request\": {\n      \"url\": \"https://eodu2u39v3kut67.m.pipedream.net/test?userName=trang&password=123\",\n      \"method\": \"GET\",\n      \"headers\": {\n        \"accept\": \"application/json\"\n      }\n    },\n    \"ok\": true,\n    \"status\": 200,\n    \"response\": {\n      \"success\": true\n    },\n    \"headers\": {\n      \"date\": \"Tue, 22 Nov 2022 17:08:11 GMT\",\n      \"content-type\": \"application/json; charset=utf-8\",\n      \"content-length\": \"16\",\n      \"connection\": \"close\",\n      \"x-powered-by\": \"Express\",\n      \"access-control-allow-origin\": \"*\"\n    }\n  }\n}",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the status is 200",
+            "match": {
+              "location": "node_modules\\@ln-maf\\api\\index.js:107"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1287799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "\"${response.success}\" is equal to \"true\"",
+            "match": {
+              "location": "node_modules\\@ln-maf\\validations\\index.js:468"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 855200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "bdd-framework-demo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "BDD framework demo",
+    "tags": [],
+    "uri": "features\\test.feature"
+  }
+]
